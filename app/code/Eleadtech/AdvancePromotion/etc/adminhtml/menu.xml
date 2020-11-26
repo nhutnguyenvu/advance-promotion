@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Eleadtech_AdvancePromotion::advancepromotion" title="Advance Promotion" module="Eleadtech_AdvancePromotion" sortOrder="100" resource="Eleadtech_AdvancePromotion::parent" parent="Eleadtech_Bcore::backend"/>
+        <add id="Eleadtech_AdvancePromotion::configuration" title="Settings" module="Eleadtech_AdvancePromotion" sortOrder="22" parent="Eleadtech_AdvancePromotion::advancepromotion" action="adminhtml/system_config/edit/section/advancepromotion" resource="Eleadtech_AdvancePromotion::configuration"/>
+    </menu>
+</config>

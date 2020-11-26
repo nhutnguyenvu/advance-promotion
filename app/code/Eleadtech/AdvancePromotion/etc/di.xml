@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\SalesRule\Model\Rule\Metadata\ValueProvider">
+        <plugin name="salesrule-plugin" type="Eleadtech\AdvancePromotion\Plugin\Rule\Metadata\ValueProvider" sortOrder="1" />
+    </type>
+    <type name="Magento\SalesRule\Controller\Adminhtml\Promo\Quote\Save">
+        <plugin name="promo_check_format" type="Eleadtech\AdvancePromotion\Plugin\Controller\Admin\Promo\Quote\Save\CheckFormat" sortOrder="1" />
+    </type>
+    <preference for="Magento\SalesRule\Model\Rule\Action\Discount\CalculatorFactory" type="Eleadtech\AdvancePromotion\Model\SalesRule\Rule\Action\Discount\CalculatorFactory" />
+</config>
