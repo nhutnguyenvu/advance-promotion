@@ -14,6 +14,9 @@
                 </item>
             </argument>
             <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
                 <dataType>text</dataType>
                 <label translate="true">Formula (Buy More Discount More)</label>
                 <notice translate="true">
